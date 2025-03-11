@@ -3,9 +3,11 @@ import style from './sidebar.module.css';
 interface Props {
   showSidebar: boolean;
   setShowSidebar: (showSidebar: boolean) => void;
+  lightMode: boolean;
+  setLightMode: (lightMode: boolean) => void;
 }
 
-export default function Sidebar({ showSidebar, setShowSidebar }: Props) {
+export default function Sidebar({ showSidebar, setShowSidebar, lightMode, setLightMode }: Props) {
   return (
     showSidebar && (
       <nav className={style.sidebar}>
@@ -28,6 +30,9 @@ export default function Sidebar({ showSidebar, setShowSidebar }: Props) {
           </li>
           <li>
             <a href="#">Osaka</a>
+          </li>
+          <li onClick={() => setLightMode(!lightMode)}>
+            <a href="#">Light/Dark Mode</a>
           </li>
         </ul>
       </nav>

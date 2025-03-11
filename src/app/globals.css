@@ -4,9 +4,14 @@ body {
 }
 
 body {
-  background-color: #111;
+  background-color: #1f1f1f;
   color: white;
   font-family: 'Roboto', sans-serif;
+}
+
+.lightMode {
+  background-color: #f0f0f0;
+  color: black;
 }
 
 * {
@@ -17,6 +22,5 @@ body {
 
 section {
   min-height: fit-content;
-  height: 100vh;
   width: 100vw;
 }

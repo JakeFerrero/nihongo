@@ -2,8 +2,8 @@ import style from './tokyo.module.css';
 
 export default function Tokyo() {
   return (
-    <section className={style.citySpread}>
-      <h1>Tokyo Itinerary</h1>
-      </section>
+    <div className={style.citySpread} style={{ height: '100%' }}>
+      <h1>Tokyo</h1>
+    </div>
   );
 }

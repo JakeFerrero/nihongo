@@ -35,7 +35,12 @@
 }
 
 .sidebar a:hover {
-  background-color: #f0f0f0;
+  background-color: rgba(240, 240, 240, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.sidebar li:last-child {
+  margin-top: auto;
 }
 
 @media (max-width: 400px) {

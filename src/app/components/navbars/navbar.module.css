@@ -1,5 +1,5 @@
 .nav {
-  background-color: white;
+  background-color: black;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
@@ -23,17 +23,34 @@
   padding: 0 30px;
   display: flex;
   align-items: center;
-  color: black;
+  color: white;
   text-decoration: none;
-}
-
-.nav a:hover {
-  background-color: #f0f0f0;
 }
 
 .nav li:first-child {
   margin-right: auto;
 }
+
+.nav a:hover {
+  background-color: grey;
+}
+
+/* ----- Light Mode ----- */
+
+.lightMode {
+  background-color: white;
+  color: black;
+}
+
+.lightMode a {
+  color: black;
+}
+
+.lightMode a:hover {
+  background-color: #f0f0f0;
+}
+
+/* ----- Media Queries ----- */
 
 @media (max-width: 800px) {
   .hideOnMobile {
